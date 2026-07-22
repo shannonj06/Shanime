@@ -1,0 +1,21 @@
+# Datasets are far past GitHub's 100 MB per-file limit (reviews.csv alone is 654 MB,
+# 2.4 GB in total). They stay local; Data_Sourcing/ and embedding/ rebuild them.
+Datasets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Secrets -- the agents need an API key at runtime
+.env
+.env.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
